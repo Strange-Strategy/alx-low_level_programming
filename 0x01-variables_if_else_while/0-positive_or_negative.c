@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  * program to print either a positive or negative number
- * Return 0 always (Success)
+ * Return: 0 always (Success)
  */
 int main(void)
 {
