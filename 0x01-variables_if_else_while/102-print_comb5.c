@@ -1,43 +1,33 @@
 #include <stdio.h>
-#include <unistd.h>
+
 /**
- * main - Entyr point
- * Description: prints two digits combination
- * Return: Always.  0 (success)
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a, b, c, i;
-	for (a = '0'; a <= '9'; a++)
+	int i, j;
+
+	for (i = 0; i < 100; i++)
 	{
-		for (b = '0'; b <= '9'; b++)
+		for (j = 0; j < 100; j++)
 		{
-			for (c = '0'; c <= '9'; c++)
+			if (i < j)
 			{
-				for (i = '0'; i <= '9'; i++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					if (((c + i) > (a + b) &&  c >= a) || a < c)
-					{
-						putchar(a);
-						putchar(b);
-						putchar(' ');
-						putchar(c);
-						putchar(i);
-						if (c == '9' && i == '8' && a == '9' && b == '9')
-						{
-							break;
-						}
-						if (!(c == '9' && i == '8' && a == '9' && b == '9'))
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
+
 		}
 	}
-	putchar((char) '\n');
+	putchar('\n');
 	return (0);
 }
-
