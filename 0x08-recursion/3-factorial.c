@@ -1,8 +1,8 @@
 #include "main.h"
-/*
- * main - recursion
- * @*s - argument
- * returns factorial
+/**
+ * factorial - function return
+ * @n: number to return
+ * Return: factorial of n
  */
 
 int factorial(int n)
