@@ -3,16 +3,15 @@
 #include <ctype.h>
 #include <string.h>
 /**
- * confirm-num - checks a string for digit
+ * check_num - checks a string for digit
  * @str: str is an array
  *
  * Return: Always 0 (Success)
  */
-int confirm-num(char *str)
+int check_num(char *str)
 {
 	/*Declaring variables*/
 	unsigned int count;
-
 	count = 0;
 	while (count < strlen(str)) /*count string*/
 
