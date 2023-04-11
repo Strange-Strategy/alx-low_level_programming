@@ -12,7 +12,9 @@ int check_num(char *str)
 {
 	/*Declaring variables*/
 	unsigned int count;
+
 	count = 0;
+
 	while (count < strlen(str)) /*count string*/
 
 	{
@@ -42,6 +44,7 @@ int main(int argc, char *argv[])
 	int sum = 0;
 
 	count = 1;
+
 	while (count < argc)
 	{
 		if (check_num(argv[count]))
