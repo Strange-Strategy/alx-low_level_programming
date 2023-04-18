@@ -1,3 +1,5 @@
+#ifndef _DOG_
+#define _DOG_
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -7,11 +9,12 @@
  * @owner: owner of the dog
  *
  *
- * Description: This structure encompasses specific details of a dog: such as its name, age, and owner.
+ * Description: This structure encompasses specific details of a dog
  */
 typedef struct dog
 {
 	char *name;
 	float age;
-	char* owner;
+	char *owner;
 } dog;
+#endif
