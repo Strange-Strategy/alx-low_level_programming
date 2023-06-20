@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- * print_dog - prints a strucy dog
- * @s: struct to print
+ * print_dog- prints a struct dog
+ * @d: struct to print
+ * Return: Always 0
  */
 void print_dog(struct dog *d)
 {
